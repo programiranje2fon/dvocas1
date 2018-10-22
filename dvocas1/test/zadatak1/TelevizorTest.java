@@ -6,6 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import zadatak1.Televizor;
+
 public class TelevizorTest {
 	
 	Televizor t;
