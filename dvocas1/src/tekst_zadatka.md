@@ -3,17 +3,17 @@
 ##Zadatak 1
 *(radi ga laborant u saradnji sa studentima)*
 
-Napraviti klasu **Televizor** u paketu **zadatak1**. Ova klasa bi trebalo da ima: **(klasa, deklaracija klase, telo klase, paketi - osnova i ideje)**
+Napraviti klasu **Televizor** u paketu **zadatak1**. Ova klasa bi trebalo da ima: 
 
-1. Atribut **jacinaTona**. Početna vrednost za jačinu tona je 0 (smatra se da je ton isključen tj. nula).**(atribut, deklaracija atributa, osnovni tipovi)**
+1. Atribut **jacinaTona**. Početna vrednost za jačinu tona je 0 (smatra se da je ton isključen tj. nula).
 
 2. Atribut **ukljucen**. Početna vrednost za atribut uključen je false (smatra se da je televizor na početku ugašen).
 
 3. Atribut **program**. Početna vrednost za program je 1.
 
-4. Metodu **pojacajTon** koja, kada se pozove, pojačava ton televizora za jedan. **(metoda, deklaracija metode, povratna vrednost metode, telo metode)**
+4. Metodu **pojacajTon** koja, kada se pozove, pojačava ton televizora za jedan. 
 
-5. Metodu **smanjiTon** koja, kada se pozove, smanjuje ton televizora za jedan. **(aritmetički operatori +, -, *, /, ++, --)**
+5. Metodu **smanjiTon** koja, kada se pozove, smanjuje ton televizora za jedan. 
 
 6. Metodu **iskljuciTon** koja potpuno utišava ton (smanjuje vrednost jačine tona na 0).
 
@@ -25,11 +25,11 @@ Napraviti klasu **Televizor** u paketu **zadatak1**. Ova klasa bi trebalo da ima
 
 10. Metodu **vratiJacinuTona** koja vraća trenutnu vrednost jačine tona
 
-11. Metodu **promeniProgram** koja kao parametar dobija novu vrednost za program i postavlja vrednost atributa program na unetu vrednost.**(ulazni parametri metode)**
+11. Metodu **promeniProgram** koja kao parametar dobija novu vrednost za program i postavlja vrednost atributa program na unetu vrednost.
 
 12. Metodu **ispisi** koja ispisuje na ekranu trenutne vrednosti svih atributa uz odgovarajuću poruku
 
-Napraviti i klasu **ProbaTelevizor** u paketu **zadatak1** koja u main metodi kreira jedan objekat klase Televizor i poziva njegove metode: pojacajTon, ispisi, iskljuci i vratiJacinuTona. Dodeliti atributu program vrednost 5. **(objekat, incijalizacija objekta, main metoda, kompajliranje i startovanje programa, pozivanje atributa i metoda)**
+Napraviti i klasu **ProbaTelevizor** u paketu **zadatak1** koja u main metodi kreira jedan objekat klase Televizor i poziva njegove metode: pojacajTon, ispisi, iskljuci i vratiJacinuTona. Dodeliti atributu program vrednost 5.
 
 
 ##Zadatak 2
