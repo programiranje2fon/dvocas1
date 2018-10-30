@@ -88,7 +88,5 @@ public class RadioTest {
 		
 		assertEquals("Kad je ukljucen true i pozove se metoda, ona ne vraća true, već "+r.ukljucen, true, r.daLiJeUkljucen());
 	}
-	
-	
 
 }

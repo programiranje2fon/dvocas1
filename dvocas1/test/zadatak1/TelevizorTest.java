@@ -100,8 +100,5 @@ public class TelevizorTest {
 		
 		assertEquals("Kad se pozove metoda da podesi program na 15, ona ga podesi na "+t.jacinaTona, 15, t.program);
 	}
-	
-	
-	
 
 }
