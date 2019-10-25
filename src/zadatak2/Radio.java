@@ -3,8 +3,15 @@ package zadatak2;
 class Radio {
 	
 	boolean ukljucen = false;
-	
 	double trenutnaFrekvencija = 87.5;
+	
+	void ukljuci() {
+		ukljucen = true;
+	}
+
+	void iskljuci() {
+		ukljucen = false;
+	}
 	
 	void promeniFrekvencijuNavise() {
 		trenutnaFrekvencija = trenutnaFrekvencija + 0.1;
@@ -18,20 +25,12 @@ class Radio {
 		trenutnaFrekvencija = frekvencija;
 	}
 	
-	double vratiTrenutnuFrekvenciju() {
-		return trenutnaFrekvencija;
-	}
-	
-	void ukljuci() {
-		ukljucen = true;
-	}
-
-	void iskljuci() {
-		ukljucen = false;
-	}
-
 	boolean daLiJeUkljucen() {
 		return ukljucen;
+	}
+	
+	double vratiTrenutnuFrekvenciju() {
+		return trenutnaFrekvencija;
 	}
 	
 	void ispisi() {
