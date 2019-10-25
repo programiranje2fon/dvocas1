@@ -31,6 +31,24 @@ public class RadioTest {
 	}
 	
 	@Test
+	public void metoda_ukljuci() {
+		r.ukljucen = false;
+		
+		r.ukljuci();
+		
+		assertEquals("Kad je ukljucen false i pozove se metoda, ukljucen ne postane true, već "+r.ukljucen,true, r.ukljucen);
+	}
+	
+	@Test
+	public void metoda_iskljuci() {
+		r.ukljucen = true;
+		
+		r.iskljuci();
+		
+		assertEquals("Kad je ukljucen true i pozove se metoda, ukljucen ne postane false, već "+r.ukljucen, false, r.ukljucen);
+	}
+	
+	@Test
 	public void metoda_promeniFrekvencijuNavise() {
 		r.trenutnaFrekvencija = 99.7;
 		
@@ -58,35 +76,17 @@ public class RadioTest {
 	}
 	
 	@Test
-	public void metoda_vratiTrenutnuFrekvenciju() {
-		r.trenutnaFrekvencija = 100.0;
-		
-		assertEquals("Kad je trenutna frekvencija 100 i pozove se metoda, ona ne vraća 100, već "+r.vratiTrenutnuFrekvenciju(),100.0, r.vratiTrenutnuFrekvenciju(), 0.0001);
-	}
-	
-	@Test
-	public void metoda_ukljuci() {
-		r.ukljucen = false;
-		
-		r.ukljuci();
-		
-		assertEquals("Kad je ukljucen false i pozove se metoda, ukljucen ne postane true, već "+r.ukljucen,true, r.ukljucen);
-	}
-	
-	@Test
-	public void metoda_iskljuci() {
-		r.ukljucen = true;
-		
-		r.iskljuci();
-		
-		assertEquals("Kad je ukljucen true i pozove se metoda, ukljucen ne postane false, već "+r.ukljucen, false, r.ukljucen);
-	}
-	
-	@Test
 	public void metoda_daLiJeUkljucen() {
 		r.ukljucen = true;
 		
 		assertEquals("Kad je ukljucen true i pozove se metoda, ona ne vraća true, već "+r.ukljucen, true, r.daLiJeUkljucen());
+	}
+	
+	@Test
+	public void metoda_vratiTrenutnuFrekvenciju() {
+		r.trenutnaFrekvencija = 100.0;
+		
+		assertEquals("Kad je trenutna frekvencija 100 i pozove se metoda, ona ne vraća 100, već "+r.vratiTrenutnuFrekvenciju(),100.0, r.vratiTrenutnuFrekvenciju(), 0.0001);
 	}
 
 }

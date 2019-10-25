@@ -6,6 +6,7 @@ class ProbaTelevizor {
 		Televizor t = new Televizor();
 		int trenutna_jacina_tona;
 
+		t.ukljuci();
 		t.ispisi();
 		t.pojacajTon();
 		t.ispisi();

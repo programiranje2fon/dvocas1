@@ -3,9 +3,17 @@ package zadatak1;
 
 class Televizor {
 
-	int jacinaTona = 0;
 	boolean ukljucen = false;
+	int jacinaTona = 0;
 	int program = 1;
+	
+	void ukljuci() {
+		ukljucen = true;
+	}
+
+	void iskljuci() {
+		ukljucen = false;
+	}
 
 	void pojacajTon() {
 		jacinaTona = jacinaTona + 1;// alternativno: jacinaTona++;
@@ -17,14 +25,6 @@ class Televizor {
 
 	void iskljuciTon() {
 		jacinaTona = 0;
-	}
-
-	void ukljuci() {
-		ukljucen = true;
-	}
-
-	void iskljuci() {
-		ukljucen = false;
 	}
 
 	boolean daLiJeUkljucen() {

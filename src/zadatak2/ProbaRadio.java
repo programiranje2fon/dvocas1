@@ -6,25 +6,16 @@ class ProbaRadio {
 		Radio r = new Radio();
         
         r.ispisi();
-        
-        r.trenutnaFrekvencija = 107.3;
-        
-        r.ispisi();
-        
-        r.promeniFrekvencijuNavise();
-        
-        r.ispisi();
-        
-        r.promeniFrekvencijuNanize();
-        
-        r.ispisi();
-        
         r.ukljuci();
-        
+        r.trenutnaFrekvencija = 107.3;
         r.ispisi();
-        
+        r.promeniFrekvencijuNavise();
+        r.ispisi();
+        r.promeniFrekvencijuNanize();
+        r.ispisi();
+        r.ukljuci();
+        r.ispisi();
         r.iskljuci();
-        
         r.ispisi();
         
         double trenutnaFrekvencija = r.vratiTrenutnuFrekvenciju();

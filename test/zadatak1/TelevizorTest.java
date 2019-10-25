@@ -19,6 +19,11 @@ public class TelevizorTest {
 	public void tearDown() throws Exception {
 		t = null;
 	}
+	
+	@Test
+	public void atribut_ukljucen() {
+		assertEquals("Početna vrednost atributa ukljucen bi trebalo da bude false, ali je "+t.ukljucen, false, t.ukljucen);
+	}
 
 	@Test
 	public void atribut_jacinaTona() {
@@ -26,13 +31,26 @@ public class TelevizorTest {
 	}
 	
 	@Test
-	public void atribut_ukljucen() {
-		assertEquals("Početna vrednost atributa ukljucen bi trebalo da bude false, ali je "+t.ukljucen, false, t.ukljucen);
+	public void atribut_program() {
+		assertEquals("Početna vrednost atributa program bi trebalo da bude 1, ali je "+t.program,1, t.program);
 	}
 	
 	@Test
-	public void atribut_program() {
-		assertEquals("Početna vrednost atributa program bi trebalo da bude 1, ali je "+t.program,1, t.program);
+	public void metoda_ukljuci() {
+		t.ukljucen = false;
+		
+		t.ukljuci();
+		
+		assertEquals("Kad je ukljucen false i pozove se metoda, ukljucen ne postane true, već "+t.ukljucen, true, t.ukljucen);
+	}
+	
+	@Test
+	public void metoda_iskljuci() {
+		t.ukljucen = true;
+		
+		t.iskljuci();
+		
+		assertEquals("Kad je ukljucen true i pozove se metoda, ukljucen ne postane false, već "+t.ukljucen, false, t.ukljucen);
 	}
 	
 	@Test
@@ -60,24 +78,6 @@ public class TelevizorTest {
 		t.iskljuciTon();
 		
 		assertEquals("Kad je jacina tona 5 i pozove se metoda, jacina tona ne postane 0, već "+t.jacinaTona, 0, t.jacinaTona);
-	}
-	
-	@Test
-	public void metoda_ukljuci() {
-		t.ukljucen = false;
-		
-		t.ukljuci();
-		
-		assertEquals("Kad je ukljucen false i pozove se metoda, ukljucen ne postane true, već "+t.ukljucen, true, t.ukljucen);
-	}
-	
-	@Test
-	public void metoda_iskljuci() {
-		t.ukljucen = true;
-		
-		t.iskljuci();
-		
-		assertEquals("Kad je ukljucen true i pozove se metoda, ukljucen ne postane false, već "+t.ukljucen, false, t.ukljucen);
 	}
 	
 	@Test
