@@ -1,6 +1,6 @@
-#Laboratorijske vežbe – dvočas br. 1
+# Laboratorijske vežbe – dvočas br. 1
 
-##Zadatak 1
+## Zadatak 1
 *(radi ga laborant u saradnji sa studentima)*
 
 Napraviti klasu **Televizor** u paketu **zadatak1**. Ova klasa bi trebalo da ima:
@@ -32,7 +32,7 @@ Napraviti klasu **Televizor** u paketu **zadatak1**. Ova klasa bi trebalo da ima
 Napraviti i klasu **ProbaTelevizor** u paketu **zadatak1** koja u main metodi kreira jedan objekat klase Televizor i poziva njegove metode: ukljuci, pojacajTon, smanjiTon, ispisi i vratiJacinuTona. Dodeliti atributu program vrednost 5.
 
 
-##Zadatak 2
+## Zadatak 2
 *(studenti rade sami)*
 
 Napraviti klasu **Radio** u paketu **zadatak2**. Ova klasa bi trebalo da ima:
